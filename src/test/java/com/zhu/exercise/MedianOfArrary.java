@@ -39,4 +39,7 @@ public class MedianOfArrary {
 
         return 0;
     }
+=======
+
+>>>>>>> origin/master
 }
