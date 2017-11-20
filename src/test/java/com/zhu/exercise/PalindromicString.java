@@ -39,7 +39,7 @@ public class PalindromicString {
     
     @Test
     public void testPalindrome(){
-    	String s= "abcd";
+    	String s= "abcdb";
     	String result = longestPalindrome(s);
     	System.out.print(result);
     }
