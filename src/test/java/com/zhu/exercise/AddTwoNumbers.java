@@ -11,6 +11,15 @@ import org.junit.Test;
  * </p>
  * 
  * @author zhukai
+ *
+ * 两个链表 表示的数相加得出的的值
+ * 逆序表示 高位在后面
+ * 示例:
+ * Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+*	Output: 7 -> 0 -> 8
+ *输入特点:
+ * 1非空链表
+ *
  */
 public class AddTwoNumbers {
 
@@ -110,13 +119,13 @@ public class AddTwoNumbers {
 	@Test
 	public void testAddtwoNumbers(){
 		ListNode l1,l2;
-		int[] g1= {5};
+		int[] g1= {5,9};
 		int[] g2= {5};
 		
 		l1=genLinkList(g1);
 		l2=genLinkList(g2);
 		
-		ListNode tmp = addTwoNumbers(l1,l2);
+		ListNode tmp = addTwoNumbers2(l1,l2);
 		
 		while(null!=tmp.next){
 			System.out.println(tmp.val);
