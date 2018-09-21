@@ -45,15 +45,16 @@ public class ReverseInt {
 	public int enhanceReverse(int x) {
 		boolean negative_flag = false;
 		long tmp = 0;
-		if(x<0) {
+		long raw = x;
+		if(raw<0) {
 			negative_flag=true;
-			x-=x;
+			raw=-(raw);
 		}
 		
-		while(x!=0) {
+		while(raw!=0) {
 			tmp=tmp*10;
-			tmp+=x%10;
-			x/=10;
+			tmp+=raw%10;
+			raw/=10;
 		}
 		if(tmp >Integer.MAX_VALUE) {
 			return 0;
@@ -66,8 +67,9 @@ public class ReverseInt {
 	
 	@Test
 	public void testreserve(){
-		int result = getReverseInt(634);
-		int result2 = enhanceReverse(4561351);
+		int result = getReverseInt(-2147483648);
+		int result2 = enhanceReverse(-2147483648);
+		
 		System.out.println(result);
 		System.out.println(result2);
 	}
