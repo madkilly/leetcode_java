@@ -1,6 +1,6 @@
-#leetcode exercise
+# leetcode exercise
 
-##index
+## index
 
 1.[two sum](./details/TwoSum.md)
 
