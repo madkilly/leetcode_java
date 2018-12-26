@@ -1,9 +1,9 @@
-#Rotate Image 矩阵旋转
+# Rotate Image 矩阵旋转
 
-##问题
+## 问题
 nxn矩阵旋转90度
 
-##示例
+## 示例
 
 ```
 Given input matrix = 
@@ -39,7 +39,7 @@ rotate the input matrix in-place such that it becomes:
 ]
 ```
 
-##解法1
+## 解法1
 
 第一种解法十分简单
 
@@ -64,6 +64,6 @@ y的列号为x的n-1-行号
 搭配辅助空间可以轻易得出结果
 
 
-##解法2
+## 解法2
 
 通过对角线翻转 这种方法不需要使用辅助空间能够提高效率
