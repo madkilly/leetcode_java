@@ -12,6 +12,8 @@
 
 4.[longestPalindrome 最长子回文](./details/longestPalindrome.md)
 
+5.[ReverseInt 转置数字](./details/exercise/ReverseInt.md)
+
 
 ## 排序
 
