@@ -13,9 +13,10 @@ public class TraverseString {
 		if(str.length-1==findex) {
 			result.add(new String(str));
 		}
-		
-		// ±éÀú²ãÊıÎóµ¼ÁË×Ô¼º
+
 		for(int i= findex;i<str.length;i++) {
+			//ä¸€ç»´æ•°ç»„æ˜¯æ·±å…‹éš†
+			//äºŒç»´æ•°ç»„è¦å¯¹æ¯ä¸€ç»´è¿›è¡Œå…‹éš†
 			char[] newtmps =  str.clone();
 			swap(newtmps, findex, i);
 			//System.out.println(new String(newtmps));
